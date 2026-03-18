@@ -32,7 +32,7 @@ body.no-scroll {
     transition: all 0.5s ease;
 }
 .nav-links a:hover{
-    color: #007BFF;
+    color: rgba(15, 209, 15, 0.628);
     
 }
 .logo{
