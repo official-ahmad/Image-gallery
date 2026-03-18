@@ -315,6 +315,63 @@ body.no-scroll {
 .fade-in { animation: fadeIn 0.5s ease; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
+.social-links {
+    margin-top: 28px;
+    padding: 36px 5% 44px;
+    text-align: center;
+    background: linear-gradient(180deg, #f5f8ff 0%, #eef3ff 100%);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.social-links h2 {
+    font-size: 30px;
+    color: #1f2a44;
+    margin-bottom: 8px;
+}
+
+.social-links p {
+    color: #4c5a75;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #0f1b35;
+    background: #ffffff;
+    border: 1px solid #d7e0f5;
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.social-icons a svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.social-icons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 16px -12px rgba(8, 25, 65, 0.5);
+    border-color: #95abde;
+}
+
+.social-icons a:focus-visible {
+    outline: 3px solid #8eb8ff;
+    outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
     #navbar {
         flex-direction: column;
@@ -379,5 +436,23 @@ body.no-scroll {
         width: 64px;
         height: 64px;
         font-size: 42px;
+    }
+
+    .social-links {
+        padding: 30px 16px 34px;
+    }
+
+    .social-links h2 {
+        font-size: 24px;
+    }
+
+    .social-links p {
+        font-size: 15px;
+    }
+
+    .social-icons a {
+        width: 100%;
+        justify-content: center;
+        max-width: 240px;
     }
 }
